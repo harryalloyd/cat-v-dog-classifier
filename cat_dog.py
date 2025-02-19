@@ -89,7 +89,7 @@ val_loss, val_acc = model.evaluate(val_ds)
 print(f"Validation accuracy: {val_acc:.2f}")
 
 # 10. Example: Predict on a single new image (replace 'dog1.jpg' with your own image)
-new_img_path = "test.jpg"
+new_img_path = "put_your_image_here.jpg"
 img = keras.preprocessing.image.load_img(new_img_path, target_size=(img_height, img_width))
 img_array = keras.preprocessing.image.img_to_array(img)
 img_array = tf.expand_dims(img_array, 0)  # Create a batch of 1
